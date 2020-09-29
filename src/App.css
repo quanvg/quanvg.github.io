@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -22,7 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 } */
+
+html {  
+  background: url(https://i.pinimg.com/originals/d2/25/e0/d225e0fb8b795743ad73998d5b25fdf4.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  color: white;
+}
+
+.container::after {
+    content: "";
+    opacity: 1;
+    background: rgb(26, 31, 41) url("https://i.pinimg.com/originals/d2/25/e0/d225e0fb8b795743ad73998d5b25fdf4.gif") no-repeat fixed top;
+    background-blend-mode: luminosity;
+    /* also change the blend mode to what suits you, from darken, to other 
+    many options as you deem fit*/
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    height: 500px;
+}
